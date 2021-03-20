@@ -8,8 +8,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 
-PATH = 'D:\Program Files (x86)\chromedriver.exe'
-TOKEN = 'NzIyODE4MzA5NjU3MTk4NTky.XuonAg.sQ4QCdgfbxTAV-cQQwlMbHeS68k'
+PATH = 'PATH'
+TOKEN = 'TOKEN'
 
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
