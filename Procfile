@@ -1,1 +1,1 @@
-worker: python Maplestory-Discord-Bot/discord-bot.py
+worker: python discord-bot.py
