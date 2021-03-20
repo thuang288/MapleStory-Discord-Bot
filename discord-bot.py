@@ -22,7 +22,10 @@ options.add_argument('--disable-dev-shm-usage')
 
 # discord bot commands 
 client = commands.Bot(command_prefix = '.')
-client.remove_command('help')
+
+@client.command()
+async def clear(ctx, amount=5):
+    await ctx.channel.purge(limit=amount)
 
 @client.event
 async def on_ready():
