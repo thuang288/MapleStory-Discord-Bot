@@ -1,5 +1,6 @@
 import discord
 import time
+import os
 from lxml import etree
 from discord.ext import commands
 from selenium import webdriver
@@ -8,8 +9,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 
-PATH = 'PATH'
-TOKEN = 'TOKEN'
+PATH = 'D:\Program Files (x86)\chromedriver.exe'
+TOKEN = os.environ.get('TOKEN')
 
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
@@ -38,7 +39,7 @@ async def rank(ctx, name):
     search = driver.find_element_by_xpath("//input[@placeholder='Character Name']")
     search.send_keys(name)
     search.send_keys(Keys.ENTER)
-    time.sleep(1)
+    time.sleep(2)
 
     soup = BeautifulSoup(driver.page_source, 'lxml')
   
