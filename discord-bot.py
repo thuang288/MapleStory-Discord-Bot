@@ -9,11 +9,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 
-PATH = os.environ.get('PATH')
+PATH = os.environ.get('CHROMEDRIVER_PATH')
 TOKEN = os.environ.get('TOKEN')
 
 options = webdriver.ChromeOptions()
-options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
+#options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--incognito')
 options.add_argument('--headless')
