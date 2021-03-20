@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 
-PATH = 'D:\Program Files (x86)\chromedriver.exe'
+PATH = os.environ.get('PATH')
 TOKEN = os.environ.get('TOKEN')
 
 options = webdriver.ChromeOptions()
