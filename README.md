@@ -5,4 +5,4 @@ Website
 ![](imgs/website.png)  
 
 Results scraped on Discord
-![](imgs/discord.png)
+![](imgs/result.png)
