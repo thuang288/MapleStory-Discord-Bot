@@ -4,5 +4,5 @@ Get your Maplestory character's information with Discord instead of going on to 
 Website
 ![](imgs/website.png)  
 
-Results scraped on Discord
+Results scraped on Discord  
 ![](imgs/result.png)
